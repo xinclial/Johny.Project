@@ -16,7 +16,7 @@ namespace Johny.Project.Controllers
         public ActionResult Index()
         {
             //var model = Service_VM_R_Base.GetByID(95368);
-
+            int y = 90;
             var list = DataService.VM_R_BaseRepository.Get(a => a.Name.Contains("龙门")).Take(40).ToList();
             return View();
         }
