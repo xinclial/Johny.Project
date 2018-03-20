@@ -20,5 +20,19 @@ namespace Johny.Project.Controllers
             var list = DataService.VM_R_BaseRepository.Get(a => a.Name.Contains("龙门")).Take(40).ToList();
             return View();
         }
+
+        //[HttpPost]
+        //public JsonResult GetBaseData()
+        //{
+        //    try
+        //    {
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        throw;
+        //    }
+        //}
     }
 }
